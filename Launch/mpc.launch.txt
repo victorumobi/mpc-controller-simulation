@@ -1,0 +1,13 @@
+<launch>
+    <node name="gazebo" pkg="gazebo_ros" type="gzserver" output="screen"/>
+    <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" output="screen"/>
+    
+    <!-- Robot description -->
+    <param name="robot_description" command="$(find xacro)/xacro.py '$(find gem_description)/urdf/polaris_gem.urdf.xacro'" />
+    
+    <!-- Launch RViz for visualization -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find gem_description)/rviz/gem_config.rviz" output="screen"/>
+    
+    <!-- MPC Controller -->
+    <node name="mpc_controller" pkg="mpc_controller" type="mpc_node.py" output="screen"/>
+</launch>
