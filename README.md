@@ -22,7 +22,8 @@ $ git clone https://github.com/victorumobi/mpc-controller-simulation.git
 $ cd mpc-controller-simulation
 Install Dependencies
 
-Ensure you have ROS Noetic installed. You can install the required dependencies using:
+Ensure you have ROS Noetic installed. 
+You can install the required dependencies using:
 
 
 
@@ -49,7 +50,8 @@ Launch the MPC Simulation
 $ roslaunch mpc-controller-simulation mpc.launch
 Interact with the Simulation
 
-Use the provided ROS topics and services to interact with and monitor the simulation. Refer to the mpc_node.py and mpc_controller.py for details on available topics and services.
+Use the provided ROS topics and services to interact with and monitor the simulation. 
+Refer to the mpc_node.py and mpc_controller.py for details on available topics and services.
 
 Docker Setup
 Build the Docker Image
