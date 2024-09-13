@@ -9,5 +9,5 @@
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find gem_description)/rviz/gem_config.rviz" output="screen"/>
     
     <!-- MPC Controller -->
-    <node name="mpc_controller" pkg="mpc_controller" type="mpc_node.py" output="screen"/>
+    <node name="mpc_controller" pkg="mpc_controller_simulation" type="mpc_node.py" output="screen"/>
 </launch>
