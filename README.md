@@ -18,7 +18,7 @@ Clone the Repository
 
 
 
-$ git clone https://github.com/victorumobi/mpc-controller-simulation.git mpc-controller-simulation
+$ git clone https://github.com/victorumobi/mpc-controller-simulation.git
 $ cd mpc-controller-simulation
 Install Dependencies
 
