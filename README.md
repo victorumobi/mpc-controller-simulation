@@ -17,7 +17,7 @@ Installation
 Clone the Repository
 
 
-Copy code
+
 $ git clone https://github.com/victorumobi/mpc-controller-simulation.git mpc-controller-simulation
 $ cd mpc-controller-simulation
 Install Dependencies
@@ -25,27 +25,27 @@ Install Dependencies
 Ensure you have ROS Noetic installed. You can install the required dependencies using:
 
 
-Copy code
+
 $ sudo apt-get update
 $ sudo apt-get install python3-catkin-tools
 Build the Workspace
 
 
-Copy code
+
 $ mkdir -p ~/gem_ws/src
 $ cp -r mpc-controller-simulation ~/gem_ws/src/
 $ cd ~/gem_ws
 $ catkin_make
 Source the Workspace
 
-bash
+
 $ Copy code
 $ source devel/setup.bash
 Running the Simulation
 Launch the MPC Simulation
 
-bash
-Copy code
+
+
 $ roslaunch mpc-controller-simulation mpc.launch
 Interact with the Simulation
 
@@ -55,12 +55,12 @@ Docker Setup
 Build the Docker Image
 
 
-Copy code
+
 $ docker build -t mpc-controller-simulation .
 Run the Docker Container
 
-bash
-Copy code
+
+
 $ docker run -it --rm --name mpc-controller-simulation mpc-controller-simulation
 Submission Guidelines
 Prepare the Deliverables
@@ -80,8 +80,7 @@ Create a Zip Archive
 
 Zip your entire workspace directory, ensuring the src/, launch/, and any other relevant directories are included.
 
-bash
-Copy code
+
 $ cd ~/gem_ws
 $ zip -r mpc-controller-simulation_submission.zip src launch Dockerfile CMakeLists.txt package.xml
 $ Submit Your Assignment
